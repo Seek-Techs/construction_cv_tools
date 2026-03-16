@@ -1,0 +1,11 @@
+opencv-python
+pdf2image
+pytesseract
+pillow
+numpy
+pandas
+ultralytics
+pyyaml  # For config
+logging  # Built-in, but note it
+reportlab
+flask

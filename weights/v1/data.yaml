@@ -1,0 +1,14 @@
+names:
+- door
+- window
+- zone
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: floor-plans-500
+  url: https://universe.roboflow.com/university-y9nbi/floor-plans-500/dataset/1
+  version: 1
+  workspace: university-y9nbi
+test: ../test/images
+train: ../train/images
+val: ../valid/images

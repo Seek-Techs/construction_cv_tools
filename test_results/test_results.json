@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-02-16T14:58:34.310866",
+  "phases": {
+    "phase_1": {
+      "status": "warning",
+      "message": "Using default scale",
+      "time": 10.03372573852539
+    },
+    "phase_2_site": {
+      "status": "passed",
+      "count": 7,
+      "measurements": [
+        {
+          "type": "width",
+          "value": 5.5,
+          "value_meters": 5.5,
+          "confidence": 0.95,
+          "unit": "meters",
+          "source": "site_photo"
+        },
+        {
+          "type": "height",
+          "value": 6.0,
+          "value_meters": 6.0,
+          "confidence": 0.95,
+          "unit": "meters",
+          "source": "site_photo"
+        },
+        {
+          "type": "window",
+          "value": 2.0,
+          "value_meters": 2.0,
+          "confidence": 0.9,
+          "unit": "meters",
+          "source": "site_photo"
+        },
+        {
+          "type": "window",
+          "value": 1.5,
+          "value_meters": 1.5,
+          "confidence": 0.9,
+          "unit": "meters",
+          "source": "site_photo"
+        },
+        {
+          "type": "door",
+          "value": 1.2,
+          "value_meters": 1.2,
+          "confidence": 0.85,
+          "unit": "meters",
+          "source": "site_photo"
+        },
+        {
+          "type": "room_width",
+          "value": 3.0,
+          "value_meters": 3.0,
+          "confidence": 0.88,
+          "unit": "meters",
+          "source": "site_photo"
+        },
+        {
+          "type": "room_width",
+          "value": 2.5,
+          "value_meters": 2.5,
+          "confidence": 0.88,
+          "unit": "meters",
+          "source": "site_photo"
+        }
+      ],
+      "time": 0.2853405475616455
+    },
+    "phase_2_blueprint": {
+      "status": "passed",
+      "count": 7,
+      "measurements": [
+        {
+          "type": "width",
+          "value": 5.5,
+          "value_meters": 5.5,
+          "confidence": 0.98,
+          "unit": "meters",
+          "source": "blueprint"
+        },
+        {
+          "type": "height",
+          "value": 6.0,
+          "value_meters": 6.0,
+          "confidence": 0.98,
+          "unit": "meters",
+          "source": "blueprint"
+        },
+        {
+          "type": "window",
+          "value": 2.0,
+          "value_meters": 2.0,
+          "confidence": 0.99,
+          "unit": "meters",
+          "source": "blueprint"
+        },
+        {
+          "type": "window",
+          "value": 1.5,
+          "value_meters": 1.5,
+          "confidence": 0.99,
+          "unit": "meters",
+          "source": "blueprint"
+        },
+        {
+          "type": "door",
+          "value": 1.2,
+          "value_meters": 1.2,
+          "confidence": 0.99,
+          "unit": "meters",
+          "source": "blueprint"
+        },
+        {
+          "type": "room_width",
+          "value": 3.0,
+          "value_meters": 3.0,
+          "confidence": 0.98,
+          "unit": "meters",
+          "source": "blueprint"
+        },
+        {
+          "type": "room_width",
+          "value": 2.5,
+          "value_meters": 2.5,
+          "confidence": 0.98,
+          "unit": "meters",
+          "source": "blueprint"
+        }
+      ],
+      "time": 0.22915911674499512
+    },
+    "phase_3": {
+      "status": "passed",
+      "count": 7,
+      "matches": [
+        {
+          "site_type": "width",
+          "site_value": 5.5,
+          "pdf_type": "width",
+          "pdf_value": 5.5,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        },
+        {
+          "site_type": "height",
+          "site_value": 6.0,
+          "pdf_type": "height",
+          "pdf_value": 6.0,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        },
+        {
+          "site_type": "window",
+          "site_value": 2.0,
+          "pdf_type": "window",
+          "pdf_value": 2.0,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        },
+        {
+          "site_type": "window",
+          "site_value": 1.5,
+          "pdf_type": "window",
+          "pdf_value": 1.5,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        },
+        {
+          "site_type": "door",
+          "site_value": 1.2,
+          "pdf_type": "door",
+          "pdf_value": 1.2,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        },
+        {
+          "site_type": "room_width",
+          "site_value": 3.0,
+          "pdf_type": "room_width",
+          "pdf_value": 3.0,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        },
+        {
+          "site_type": "room_width",
+          "site_value": 2.5,
+          "pdf_type": "room_width",
+          "pdf_value": 2.5,
+          "match_type": "exact_type",
+          "confidence": 1.0
+        }
+      ],
+      "time": 0.07383966445922852
+    },
+    "phase_4": {
+      "status": "passed",
+      "pdf_path": "C:\\Users\\Admin\\Documents\\Python project\\2026\\construction_cv_tool\\test_results\\test_report.pdf",
+      "csv_path": "C:\\Users\\Admin\\Documents\\Python project\\2026\\construction_cv_tool\\test_results\\test_report.csv",
+      "time": 1.3925130367279053
+    },
+    "phase_5": {
+      "status": "passed",
+      "endpoints": 8,
+      "workers": 2
+    }
+  }
+}

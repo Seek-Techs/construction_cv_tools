@@ -1,0 +1,66 @@
+pdf_path: blueprint.pdf  # Your PDF
+output_dir: outputs  # Where to save results
+yolo_model: C:\Users\Admin\Documents\Python project\2026\construction_cv_tool\weights\v1\best.pt  # Your trained YOLO model
+ocr_lang: eng  # English for measurements
+log_level: INFO  # Diary detail
+
+# Phase 1: Reference Scale Detection Settings
+reference_scale:
+  # What types of references to detect
+  detect_tape_measure: true      # Auto-detect tape measure (most reliable)
+  detect_brick_reference: true   # Auto-detect standard brick (19cm)
+  detect_ruler: true             # Auto-detect ruler
+  
+  # Reference object sizes (in meters)
+  tape_measure_length: 1.0       # Standard 1m tape measure
+  brick_length: 0.19             # Standard brick = 19cm
+  ruler_length: 0.3              # Standard ruler = 30cm
+  
+  # Scale validation
+  min_scale_px_per_m: 50         # Minimum pixels per meter (photo too far)
+  max_scale_px_per_m: 2000       # Maximum pixels per meter (photo too close)
+  
+  # Confidence thresholds
+  min_confidence: 0.5            # Minimum YOLO detection confidence
+
+# Phase 2: Better Measurement Extraction Settings
+measurement_extraction:
+  # OCR preprocessing
+  use_preprocessing: true        # Apply CLAHE, denoise, sharpen
+  preprocessing_clahe_clip: 2.0  # CLAHE clip limit
+  preprocessing_clahe_tiles: 8   # CLAHE tile grid size
+  
+  # Measurement patterns (regex)
+  extract_meters: true           # Extract measurements in meters
+  extract_centimeters: true      # Extract measurements in cm
+  extract_millimeters: true      # Extract measurements in mm
+  extract_inches: true           # Extract measurements in inches
+  extract_feet: true             # Extract measurements in feet
+  extract_diameter: true         # Extract diameter (Ø symbol)
+  extract_elevation: true        # Extract elevation (EL:)
+  extract_angles: true           # Extract angles (°)
+  
+  # Validation
+  min_measurement_m: 0.01        # Minimum valid measurement (0.01m = 1cm)
+  max_measurement_m: 1000        # Maximum valid measurement (1000m = 1km)
+  
+  # Output format
+  output_format: json            # json or csv or both
+  save_measurements: true        # Save to file
+  output_file: extracted_measurements.json
+
+# Measurement comparison
+measurement:
+  # Tolerance for marking matches
+  match_tolerance_percent: 5     # Within 5% = match ✅
+  issue_tolerance_percent: 15    # Within 15% = small issue ⚠️
+  # > 15% = big problem 🚨
+  
+  # Unit handling
+  default_unit: m                # meters
+  auto_convert_units: true       # Convert all to meters
+
+# Logging
+logging:
+  log_file: construction_cv.log
+  verbose: true

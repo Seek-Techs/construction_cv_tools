@@ -1,0 +1,14 @@
+# Python stuff
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Media & Large Files
+*.mp4
+*.mov
+*.zip

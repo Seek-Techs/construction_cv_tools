@@ -1,0 +1,154 @@
+```
+╔════════════════════════════════════════════════════════════════╗
+║  📸 SAMPLE CONSTRUCTION PHOTOS - READY FOR TESTING             ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ TWO REALISTIC SAMPLE PHOTOS CREATED
+
+📷 Sample Site Photo (sample_site.jpg)
+   Location: test_data/sample_site.jpg
+   Size: 89.8 KB
+   
+   What's shown:
+   ├─ Construction site with 3 walls
+   ├─ 2 windows (1.5m and 1.3m height)
+   ├─ 1 door (1.0m wide)
+   ├─ Multiple measurements visible:
+   │  • 2.0m, 5.5m, 5.5m (main dimensions)
+   │  • 1.5m, 1.3m (windows)
+   │  • 1.0m (door)
+   └─ 📏 Tape measure scale reference (1m = 60px)
+
+📋 Sample Blueprint (sample_blueprint.jpg)
+   Location: test_data/sample_blueprint.jpg
+   Size: 105.5 KB
+   
+   What's shown:
+   ├─ Floor plan with 3 rooms
+   ├─ Grid background (blueprint style)
+   ├─ Dimension annotations:
+   │  • 5.5m (total width)
+   │  • 6.0m (total height)
+   │  • 2.0m, 1.75m (room divisions)
+   ├─ 2 windows and 1 door
+   └─ Professional blueprint formatting
+
+════════════════════════════════════════════════════════════════
+
+🎯 HOW TO USE THEM
+
+Step 1: Start Web App
+   Command: .\venv\Scripts\python run_app.py
+
+Step 2: Open Browser
+   URL: http://localhost:5000
+
+Step 3: Upload Photos
+   • Click "Select Site Photo" → sample_site.jpg
+   • Click "Select Blueprint" → sample_blueprint.jpg
+
+Step 4: Analyze
+   • Click "Analyze"
+   • Watch real-time progress
+   • Monitor all 5 phases
+
+Step 5: Download Results
+   • PDF Report (professional format)
+   • CSV Report (Excel-ready data)
+
+════════════════════════════════════════════════════════════════
+
+📊 WHAT TO EXPECT
+
+Expected Analysis Results:
+
+Phase 1: Scale Detection (1 second)
+   ✅ Detects tape measure as scale reference
+   ✅ Calculates: 1m = 60 pixels
+
+Phase 2: Measurement Extraction (2-3 seconds)
+   ✅ Finds 6+ measurements:
+      • 2.0m (wall)
+      • 5.5m (width)
+      • 5.5m (height)
+      • 1.5m (window 1)
+      • 1.3m (window 2)
+      • 1.0m (door)
+
+Phase 3: Element Matching (<1 second)
+   ✅ Matches to blueprint:
+      • Windows: 95%+ confidence
+      • Door: 95%+ confidence
+      • Room dimensions: 95%+ confidence
+
+Phase 4: Report Generation (<1 second)
+   ✅ Creates PDF and CSV
+
+Total Time: ~5 seconds end-to-end
+
+════════════════════════════════════════════════════════════════
+
+💡 TIPS FOR BEST RESULTS
+
+1. Check Dashboard Updates
+   - Real-time progress every 2 seconds
+   - Shows which phase is running
+   - Displays elapsed time
+
+2. Review Measurements
+   - Compare extracted to visible in photo
+   - Should match very closely
+   - Confidence scores shown
+
+3. Verify Reports
+   - PDF should be professional quality
+   - CSV should have all data
+   - Numbers should be accurate
+
+4. Observe Confidence Scores
+   - Should be 95%+ for this test data
+   - Lower scores = harder to match
+   - System explains each mismatch
+
+════════════════════════════════════════════════════════════════
+
+📁 EXACT LOCATIONS
+
+Sample Photos:
+   Site:      C:\...\construction_cv_tool\test_data\sample_site.jpg
+   Blueprint: C:\...\construction_cv_tool\test_data\sample_blueprint.jpg
+
+After Testing:
+   Reports:   C:\...\construction_cv_tool\reports\
+   Uploads:   C:\...\construction_cv_tool\uploads\
+   Results:   C:\...\construction_cv_tool\test_results\
+
+════════════════════════════════════════════════════════════════
+
+✨ QUICK START COMMAND
+
+```bash
+cd "c:\Users\Admin\Documents\Python project\2026\construction_cv_tool"
+.\venv\Scripts\python run_app.py
+# Then open: http://localhost:5000
+# Upload: sample_site.jpg + sample_blueprint.jpg
+# Click: Analyze
+# Get: Professional PDF/CSV reports
+```
+
+════════════════════════════════════════════════════════════════
+
+📖 FOR MORE INFORMATION
+
+See: SAMPLE_PHOTOS_GUIDE.md (complete guide with details)
+
+════════════════════════════════════════════════════════════════
+
+🎉 YOUR TEST PHOTOS ARE READY!
+
+Start testing now with realistic construction photos
+that include measurements, scale references, and dimensions.
+
+Good luck! 🏗️📸✨
+════════════════════════════════════════════════════════════════
+```
